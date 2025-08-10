@@ -52,6 +52,7 @@ const data = {
         "Jean Pierrot-Oryanov : a dit que Kobralost allait nous taper sur les doigts.",
         "Athena Heartfillia : est-ce que c'est possible pour les métiers qui ne sont pas autorisés à faire des actions illégales (Keypad Crack, Lockpick) ?",
         "Kobralost : Peut-être une commande !unstuck pour les joueurs qui sont bloqués.",
+        "Lucas DeLaCroisseeDesPommes : est-ce qu'au niveau des logs la mise à jour avance ? Réponse de Bryan Garcias : oui, on y travaille.",
     ],
     rules: {
         additions: [
