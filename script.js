@@ -30,7 +30,7 @@ const data = {
         "On est une équipe, on doit s'entraider, pas s'enfoncer.",
         "Sur le dashboard, on doit mettre au moins un message pour indiquer ce qu'on fait, afin que personne ne soit démuni si vous avez pris sa demande et que vous ne lui dites rien.",
         "Essayez de consulter le dashboard plus régulièrement.",
-        "Quand on part en vacances, pas de demande sur le dashboard ; prévenez votre référent si besoin.",
+        "Quand on part en vacances, informez votre référent des demandes en cours.",
         "Lors d'une plainte admin, notre devoir est de donner tous les éléments au joueur qui ont motivé notre réflexion et notre sanction.",
         "Quand on met une sanction, on vérifie le casier du joueur, on regarde bien que c'est le bon joueur à sanctionner (regarder le nom en haut à gauche), et on écrit la sanction avec le plus d'informations possible pour bien la comprendre en cas de plainte ultérieure.",
         "Quand on met des sanctions, il est hors de question que cela repose sur une interprétation personnelle ou des suppositions. Si aucune preuve tangible, on ne sanctionne pas (sauf si c'est flagrant : emote + collé à un mur à répétition).",
