@@ -82,7 +82,7 @@ const data = {
         {
             q: "Jean Pierrot-Oryanov : quand est-ce que les formations vont commencer ?",
             a: [
-                "Réponse de Kobralost : à partir de maintenant, il faut juste demander à un administrateur pour prévenir et vous pourrez être présents dans l'information.",
+                "Réponse de Kobralost : à partir de maintenant, il faut juste demander à un administrateur pour prévenir et vous pourrez être présents dans la réunion.",
             ]
         },
         {
