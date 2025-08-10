@@ -59,7 +59,6 @@ const data = {
         "Les modérateurs en formation peuvent modérer uniquement 1 heure par jour, accompagnés d'un formateur ou administrateur, pendant une période de 7 jours.",
     ],
     freeTopics: [
-        "Jean Pierrot-Oryanov : a dit que Kobralost allait nous taper sur les doigts.",
         "Athena Heartfillia : est-ce que c'est possible pour les métiers qui ne sont pas autorisés à faire des actions illégales (Keypad Crack, Lockpick) ?",
         "Kobralost : Peut-être une commande !unstuck pour les joueurs qui sont bloqués.",
         "James Snow : à quand le projet Minecraft ? Réponse de Kobralost : ça n'arrivera jamais mais jamais.",
