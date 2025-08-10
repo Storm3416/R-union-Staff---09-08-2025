@@ -37,15 +37,15 @@ const data = {
         "Quand on est joueur et qu'on prend une sanction, on prévient son référent, ne pas le cacher, car dès qu'il le voit, il peut vous taper sur les doigts.",
         "Quand on est en mode admin, on ne doit pas rester en mode fly et rester AFK s'il y a des tickets, et on ne reste pas AFK en cas d'urgence, on prend sa FDS.",
         "S'il y a énormément de tickets (15, 20), il ne faut pas tous les traiter rapidement. Prenez votre temps pour les traiter convenablement afin que ce soit efficace et non bâclé.",
-    "Sanction : L'orthographe doit être correctement corrigée. Utilisez des outils comme (https://www.reverso.net/orthographe/correcteur-francais/) pour éviter les fautes, etc. Désormais, cela va impacter lourdement les bilans.",
+        "Sanction : L'orthographe doit être correctement corrigée. Utilisez des outils comme (https://www.reverso.net/orthographe/correcteur-francais/) pour éviter les fautes, etc. Désormais, cela va impacter lourdement les bilans.",
         "Dans les MP, faites des phrases complètes, car ils n'ont pas envie de deviner le sens de vos propos.",
         "Si on ne sait pas répondre à une question, on demande sur Discord aux autres membres du staff ou on envoie un message privé. (S'il n'y a pas de staff connecté, dire au joueur qu'on ne sait pas et lui demander de refaire une demande demain ou sur le dashboard quand il y aura plus de modérateurs connectés.)",
         "## Si présent dans la réunion, on ne doit pas refaire ce qui a été dit dans la réunion, car on est censé être au courant."
     ],
     info: [
-    "Mise en place de mesures plus importantes pour les personnes qui trollent (ban d’un an et timeout d’un an).",
+        "Mise en place de mesures plus importantes pour les personnes qui trollent (ban d’un an et timeout d’un an).",
         "Possibilité d'appliquer des sanctions plus sévères et plus régulièrement pour ceux qui jouent avec les limites.",
-        "Modification Formation : Modérateur (Loyal, Sénior, Certifié) vous pourrez essayer de vous engager en tant que formateur (cela peut prendre du temps, car il faut vous former vous-même avant de former les autres).",
+        "Ajout Formation : Modérateur (Loyal, Sénior, Certifié) vous pourrez essayer de vous engager en tant que formateur (cela peut prendre du temps, car il faut vous former vous-même avant de former les autres).",
         "Modification continue : il y aura une vidéo pour les valeurs de Kobralost.",
         "Ajout d'une période de formation : modérateur en formation (durée : 1 à 2 semaines).",
         "Les modérateurs en formation peuvent modérer seulement 1 heure avec un formateur/administrateur pendant 7 jours.",
