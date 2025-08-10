@@ -47,7 +47,7 @@ const data = {
         "Possibilité d'appliquer des sanctions plus sévères et plus régulièrement pour ceux qui jouent avec les limites.",
         "Ajout Formation : Modérateur (Loyal, Sénior, Certifié) vous pourrez essayer de vous engager en tant que formateur (cela peut prendre du temps, car il faut vous former vous-même avant de former les autres).",
         // "Modification continue : il y aura une vidéo pour les valeurs de Kobralost.",
-        "Ajout d'une période de formation : modérateur en formation (durée : 1 à 2 semaines).",
+        "Ajout d'une période de formation « modérateur en formation » (durée : 1 à 2 semaines) pour les nouveaux modérateurs.",
         "Les modérateurs en formation peuvent modérer seulement 1 heure avec un formateur/administrateur pendant 7 jours.",
     ],
     freeTopics: [
