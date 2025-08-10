@@ -67,7 +67,7 @@ const data = {
     },
     questions: [
         {
-            q: "Lucas DeLaCroisseeDesPommes : si on connaît une personne facilement à contacter, est-ce qu'on peut lui dire la sanction ?",
+            q: "Lucas DeLaCroisseeDesPommes : si on connaît une personne facilement à contacter, est-ce qu'on peut lui communiquer la sanction ? (exemple : Discord)",
             a: [
                 "Réponse de Kobralost : tu peux lui dire en lui faisant un ping, mais tu devras le faire pour tout le monde, pas que pour tes amis ou autres.",
             ]
