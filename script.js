@@ -15,7 +15,7 @@ const data = {
         { name: "Storm Kappa", role: "Modérateur apprenti" },
         { name: "Bryan Garcias", role: "Administrateur" },
         { name: "Enzo Woo", role: "Responsable serveurs" },
-        { name: "Lune Nemmour", role: "Administratrice" },
+        { name: "Lune Nemmour", role: "Responsable Serveurs" },
         { name: "Julien Castello", role: "Administrateur" },
         { name: "Kobralost", role: "Fondateur" },
         { name: "Mickey Vanderbrouk", role: "Modérateur" },
@@ -68,7 +68,7 @@ const data = {
     ],
     rules: {
         additions: [
-            // "Rien à dire pour l'instant.",
+            "Il est important de respecter le règlement de chaque métier et de ne pas troller afin de préserver l’image du staff.",
         ],
         edits: [
             // "Rien à dire pour l'instant.",
