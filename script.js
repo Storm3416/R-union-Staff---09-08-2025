@@ -52,18 +52,16 @@ const data = {
         "Jean Pierrot-Oryanov : a dit que Kobralost allait nous taper sur les doigts.",
         "Athena Heartfillia : est-ce que c'est possible pour les métiers qui ne sont pas autorisés à faire des actions illégales (Keypad Crack, Lockpick) ?",
         "Kobralost : Peut-être une commande !unstuck pour les joueurs qui sont bloqués.",
-        "Lucas DeLaCroisseeDesPommes : est-ce qu'au niveau des logs la mise à jour avance ? Réponse de Bryan Garcias : oui, on y travaille.",
-        "Lucas DeLaCroisseeDesPommes : pour le Kobralost Roleplay pour le serveur German, qu'en est-il ? Réponse de Kobralost : suite au fait qu'on a viré Marius, ça a changé un petit peu les plans, mais rien de grave.",
     ],
     rules: {
         additions: [
-            "Rien à dire pour l'instant.",
+            // "Rien à dire pour l'instant.",
         ],
         edits: [
-            "Rien à dire pour l'instant.",
+            // "Rien à dire pour l'instant.",
         ],
         removals: [
-            "Rien à dire pour l'instant.",
+            // "Rien à dire pour l'instant.",
         ]
     },
     questions: [
@@ -90,6 +88,24 @@ const data = {
             q: "Charlie Rivers : est-ce qu'on a pensé au risque potentiel de fuite du modérateur ?",
             a: [
                 "Réponse de Bryan Garcias : il n'y a pas plus d'informations que lors de la live moderation.",
+            ]
+        },
+        {
+            q: "Lucas DeLaCroisseeDesPommes : est-ce qu'au niveau des logs la mise à jour avance ?",
+            a: [
+                "Réponse de Bryan Garcias : oui, on y travaille."
+            ]
+        },
+        {
+            q: "Lucas DeLaCroisseeDesPommes : pour le Kobralost Roleplay pour le serveur German, qu'en est-il ?",
+            a: [
+                "Réponse de Kobralost : suite au fait qu'on a viré Marius, ça a changé un petit peu les plans, mais rien de grave."
+            ]
+        },
+        {
+            q: "Charlie Rivers : pour le SCP, qu'en est-il ?",
+            a: [
+                "Réponse de Kobralost : ça avance."
             ]
         }
     ],
@@ -168,7 +184,7 @@ function render() {
         return `
         <div class="item">
             <div class="q">Q: ${linkify(item.q)}</div>
-            <div class="a"><span class="label">A:</span>
+            <div class="a"><span class="label">R:</span>
                 <ul class="answers">${answersHtml}</ul>
             </div>
         </div>`;
