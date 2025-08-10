@@ -18,10 +18,20 @@ const data = {
         { name: "Lune Nemmour", role: "Administratrice" },
         { name: "Julien Castello", role: "Administrateur" },
         { name: "Kobralost", role: "Fondateur" },
+        { name: "Mickey Vanderbrouk", role: "Modérateur" },
     ],
     late: [
         { name: "Nayo EME", delay: "~26 min" },
         { name: "Jordan Milano-Oryanov", delay: "~45 min" },
+        { name: "Hugo", delay: "~1h20 min" },
+    ],
+    absent: [
+        { name: "John De Luca", role: "Modérateur Apprenti", left: true },
+        { name: "Vemo Ganzo", role: "Modérateur Loyal" },
+        { name: "Mathis DuBuisson", role: "Administration " },
+        { name: "Kyro Hoshyno", role: "Modérateur Apprenti" },
+        { name: "Tom Gomorra", role: "Modérateur Sénior" },
+
     ],
     rappels: [
         "Quand on est en mode admin, se mettre en vocal staff (sauf en live moderation).",
@@ -52,6 +62,9 @@ const data = {
         "Jean Pierrot-Oryanov : a dit que Kobralost allait nous taper sur les doigts.",
         "Athena Heartfillia : est-ce que c'est possible pour les métiers qui ne sont pas autorisés à faire des actions illégales (Keypad Crack, Lockpick) ?",
         "Kobralost : Peut-être une commande !unstuck pour les joueurs qui sont bloqués.",
+        "James Snow : à quand le projet Minecraft ? Réponse de Kobralost : ça n'arrivera jamais mais jamais.",
+        "Charlie Rivers : c'est quand le retour de l'infection ? Réponse de Kobralost : pour le prochain Halloween.",
+        "Lucas DeLaCroisseeDesPommes : est-ce qu'on peut avoir des animaux de compagnie si on n'en a pas ? Réponse de Kobralost : pas pour le moment.",
     ],
     rules: {
         additions: [
@@ -122,12 +135,10 @@ function render() {
     const chipsStaff = document.getElementById('chips-staff');
     if (chipsStaff) { chipsStaff.innerHTML = data.staffServeur.map(n => `<li>${escapeHtml(n)}</li>`).join(''); }
 
-    const grid = $('#grid-presents');
-    grid.innerHTML = data.presents.map(p => personCard(p)).join('');
+    renderAttendance();
 
     const chipsLate = document.getElementById('chips-late');
     if (chipsLate) { chipsLate.innerHTML = data.late.map(l => `<li><strong>${escapeHtml(l.name)}</strong> <span class="muted">(${escapeHtml(l.delay)})</span></li>`).join(''); }
-
     const rap = $('#list-rappels');
     rap.innerHTML = data.rappels.map((r, i) => {
         const trimmed = r.trimStart();
@@ -200,15 +211,37 @@ function render() {
     const stats = document.getElementById('stats');
     if (stats) {
         const total = data.presents.length;
+        const absents = data.absent.length;
         const admins = data.presents.filter(p => /admin/i.test(p.role)).length;
         const certifies = data.presents.filter(p => /certifié/i.test(p.role)).length;
         const apprentis = data.presents.filter(p => /apprenti/i.test(p.role)).length;
         stats.innerHTML = `
       <div class="stat"><div class="n">${total}</div><div class="t">Présents</div></div>
+      <div class="stat"><div class="n">${absents}</div><div class="t">Absents</div></div>
       <div class="stat"><div class="n">${admins}</div><div class="t">Admin</div></div>
       <div class="stat"><div class="n">${certifies}</div><div class="t">Certifiés</div></div>
       <div class="stat"><div class="n">${apprentis}</div><div class="t">Apprentis</div></div>
     `;
+    }
+}
+
+let showingAbsent = false;
+
+function renderAttendance() {
+    const grid = $('#grid-presents');
+    const currentData = showingAbsent ? data.absent : data.presents;
+    grid.innerHTML = currentData.map(p => personCard(p)).join('');
+}
+
+function setupAttendanceToggle() {
+    const btn = document.getElementById('btnToggleAttendance');
+    if (btn) {
+        btn.addEventListener('click', () => {
+            showingAbsent = !showingAbsent;
+            btn.textContent = showingAbsent ? 'Voir les présents' : 'Voir les absents';
+            renderAttendance();
+        });
+        btn.textContent = showingAbsent ? 'Voir les présents' : 'Voir les absents';
     }
 }
 
@@ -218,6 +251,7 @@ function personCard(p) {
     <h3>${escapeHtml(p.name)}</h3>
     <div class="role">${escapeHtml(p.role)}</div>
     ${p.left ? '<span class="badge red" title="A quitté le staff">parti</span>' : ''}
+    ${p.promotion ? `<span class="badge green" title="Peut être promu à ${escapeAttr(p.promotion)}">→ ${escapeHtml(p.promotion)}</span>` : ''}
   </article>`;
 }
 
@@ -318,6 +352,7 @@ window.addEventListener('DOMContentLoaded', () => {
     setupSearch();
     setupRappelsToggle();
     setupCopyAudioLink();
+    setupAttendanceToggle();
 });
 
 function fmtTime(sec) {
