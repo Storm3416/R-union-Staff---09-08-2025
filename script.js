@@ -43,7 +43,7 @@ const data = {
         "## Si présent dans la réunion, on ne doit pas refaire ce qui a été dit dans la réunion, car on est censé être au courant."
     ],
     info: [
-        "Mise en place de mesures plus importantes pour les personnes qui trollent.",
+    "Mise en place de mesures plus importantes pour les personnes qui trollent (ban d’un an et timeout d’un an).",
         "Possibilité d'appliquer des sanctions plus sévères et plus régulièrement pour ceux qui jouent avec les limites.",
         "Modification Formation : Modérateur (Loyal, Sénior, Certifié) vous pourrez essayer de vous engager en tant que formateur (cela peut prendre du temps, car il faut vous former vous-même avant de former les autres).",
         "Modification continue : il y aura une vidéo pour les valeurs de Kobralost.",
