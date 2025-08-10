@@ -250,7 +250,7 @@ function personCard(p) {
   <article class="person" data-name="${escapeAttr(p.name)}" data-role="${escapeAttr(p.role)}">
     <h3>${escapeHtml(p.name)}</h3>
     <div class="role">${escapeHtml(p.role)}</div>
-    ${p.left ? '<span class="badge red" title="A quitté le staff">parti</span>' : ''}
+    ${p.left ? '<span class="badge red" title="A quitté le staff">A quitté le staff</span>' : ''}
     ${p.promotion ? `<span class="badge green" title="Peut être promu à ${escapeAttr(p.promotion)}">→ ${escapeHtml(p.promotion)}</span>` : ''}
   </article>`;
 }
