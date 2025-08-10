@@ -22,7 +22,6 @@ const data = {
     late: [
         { name: "Nayo EME", delay: "~26 min" },
         { name: "Jordan Milano-Oryanov", delay: "~45 min" },
-
     ],
     rappels: [
         "Quand on est en mode admin, se mettre en vocal staff (sauf en live moderation).",
@@ -46,13 +45,13 @@ const data = {
         "Mise en place de mesures plus importantes pour les personnes qui trollent (ban d’un an et timeout d’un an).",
         "Possibilité d'appliquer des sanctions plus sévères et plus régulièrement pour ceux qui jouent avec les limites.",
         "Ajout Formation : Modérateur (Loyal, Sénior, Certifié) vous pourrez essayer de vous engager en tant que formateur (cela peut prendre du temps, car il faut vous former vous-même avant de former les autres).",
-        // "Modification continue : il y aura une vidéo pour les valeurs de Kobralost.",
         "Ajout d'une période de formation « modérateur en formation » (durée : 1 à 2 semaines) pour les nouveaux modérateurs.",
         "Les modérateurs en formation peuvent modérer uniquement 1 heure par jour, accompagnés d'un formateur ou administrateur, pendant une période de 7 jours.",
     ],
     freeTopics: [
         "Jean Pierrot-Oryanov : a dit que Kobralost allait nous taper sur les doigts.",
         "Athena Heartfillia : est-ce que c'est possible pour les métiers qui ne sont pas autorisés à faire des actions illégales (Keypad Crack, Lockpick) ?",
+        "Kobralost : Peut-être une commande !unstuck pour les joueurs qui sont bloqués.",
     ],
     rules: {
         additions: [
