@@ -53,6 +53,7 @@ const data = {
         "Athena Heartfillia : est-ce que c'est possible pour les métiers qui ne sont pas autorisés à faire des actions illégales (Keypad Crack, Lockpick) ?",
         "Kobralost : Peut-être une commande !unstuck pour les joueurs qui sont bloqués.",
         "Lucas DeLaCroisseeDesPommes : est-ce qu'au niveau des logs la mise à jour avance ? Réponse de Bryan Garcias : oui, on y travaille.",
+        "Lucas DeLaCroisseeDesPommes : pour le Kobralost Roleplay pour le serveur German, qu'en est-il ? Réponse de Kobralost : suite au fait qu'on a viré Marius, ça a changé un petit peu les plans, mais rien de grave.",
     ],
     rules: {
         additions: [
