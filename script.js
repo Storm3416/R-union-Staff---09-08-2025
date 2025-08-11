@@ -20,18 +20,17 @@ const data = {
         { name: "Kobralost", role: "Fondateur" },
         { name: "Mickey Vanderbrouk", role: "Modérateur" },
     ],
-    late: [
-        { name: "Nayo EME", delay: "~26 min" },
-        { name: "Jordan Milano-Oryanov", delay: "~45 min" },
-        { name: "Hugo", delay: "~1h20 min" },
-    ],
     absent: [
         { name: "John De Luca", role: "Modérateur Apprenti", left: true },
         { name: "Vemo Ganzo", role: "Modérateur Loyal" },
         { name: "Mathis DuBuisson", role: "Administration " },
         { name: "Kyro Hoshyno", role: "Modérateur Apprenti" },
         { name: "Tom Gomorra", role: "Modérateur Sénior" },
-
+    ],
+    late: [
+        { name: "Nayo EME", delay: "~26 min" },
+        { name: "Jordan Milano-Oryanov", delay: "~45 min" },
+        { name: "Hugo", delay: "~1h20 min" },
     ],
     rappels: [
         "Quand on est en mode admin, se mettre en vocal staff (sauf en live moderation).",
